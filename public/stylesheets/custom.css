@@ -1,0 +1,447 @@
+@charset "utf-8";
+/* CSS Document */
+html, body {
+   height: 100%;
+}
+a, a:hover{ color:#FFF;}
+button{ cursor: pointer;} 
+body {
+    overflow-x:hidden;
+}
+
+.wrapper, .row {
+   height: 100%;
+   margin-left:0;
+   margin-right:0;
+}
+
+.wrapper:before, .wrapper:after,
+.column:before, .column:after {
+    content: "";
+    display: table;
+}
+
+.wrapper:after,
+.column:after {
+    clear: both;
+}
+
+#sidebar {
+    padding-left: 0;
+    float: left;
+    height: 100%;
+}
+
+#sidebar .collapse.in {
+    display: inline;
+}
+
+#sidebar > .nav>li>a {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#main {
+    padding: 15px;
+    left: 0;
+}
+
+
+
+/**editado***/
+body{font-family: 'Jura', Arial, Helvetica, sans-serif;font-weight:500;margin: 0px;padding: 0px;}
+ul{
+	list-style: none;
+	margin:0px;
+	padding:0px;
+}
+
+
+#custom_content{
+    width: 82%;
+    float: left;
+    margin: 0px 9%;
+	padding:0px;
+}
+.container-fluid{margin:0px;padding: 0px;}
+.navbar{padding: 8px 5px;}
+
+
+
+
+.navbar-brand-centered{}
+.navbar-brand-centered img {
+vertical-align: initial;
+height: 100%;
+display: block;
+width: 100%;
+}
+
+.navbar-collapse {
+        position: fixed;
+        top: 54px;
+        left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        background: #000;
+        height: 100%;
+        width: 200px;
+        overflow: auto;
+    }
+    .navbar-collapse.collapsing {
+        height: auto;
+        -webkit-transition: left 0.3s ease;
+        -o-transition: left 0.3s ease;
+        -moz-transition: left 0.3s ease;
+        transition: left 0.3s ease;
+        left: -100%;
+    }
+    .navbar-collapse.show {
+        left: 0;
+        -webkit-transition: left 0.3s ease-in;
+        -o-transition: left 0.3s ease-in;
+        -moz-transition: left 0.3s ease-in;
+        transition: left 0.3s ease-in;
+    }
+
+.navbar-brand-centered {
+	position: fixed;
+	left: 50%;
+	display: block;
+	width: 122px;
+	height: 50px;
+	text-align: center;
+	margin: 0px 0px 0px -61px;
+	top: 3px;
+	z-index: 9999;
+}
+
+.dropdown-menu{
+    background: none;
+    padding: 0px;
+}
+
+img {
+    max-width: 100%;
+}
+
+#parallaxBar{
+}
+
+
+*.sprite{display:inline-block;background-image:url(../images/sprite.png);text-indent: -9999px;}
+.lupa{ width:23px; height: 24px; background-position: 0px -83px;}
+.linked{width:20px; height: 24px; background-position: -23px -83px;}
+.fb{width:20px; height: 24px; background-position: -43px -83px;}
+.insta{width: 21px;height: 24px;background-position: -63px -83px;}
+.youtube{width:20px;height: 24px;background-position: -84px -83px;}
+.btnmenu{width:32px;height: 32px;background-position: 0px 0px;margin: 14px 10px;}
+.likes{width:13px;height: 11px;background-position: -58px -12px;}
+.msgs{width:14px;height: 12px;background-position: -58px 0px;}
+button.btn_like{width:26px;height:22px;background-position: -32px 0px;padding: 0px;margin: 5px 0px;border: none;background-color: transparent;}
+
+.sharecinza{ width:20px; height:20px;}
+.sharecinza.fb{ background-position:0px -107px;}
+.sharecinza.twitter{ background-position:-20px -107px;}
+.sharecinza.google{ background-position:-40px -107px;}
+.sharecinza.linked{ background-position:-60px -107px;}
+.sharecinza.insta{ background-position:-80px -107px;}
+
+.telefone{ width: 22px; height: 23px; background-position: -94px 0px;}
+.website{width: 22px; height: 23px;background-position: -72px 0px;}
+.brasildrap{width: 47px; height: 31px;background-position: -56px -32px;}
+
+.sharetrans{width: 18px; height: 18px;}
+.sharetrans.fb{background-position: -55px -63px;}
+.sharetrans.twitter{background-position: -73px -63px;}
+.sharetrans.linked{background-position: -91px -63px;}
+
+.stars.branca{width: 145px; height: 21px;background-position: 0px -127px;}
+.stars.preta{width: 105px; height: 15px;background-position: 0px -148px;}
+
+
+
+
+div#header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 99;
+    height: 60px;
+    background: #343a40;
+}
+
+div.redes-sociais{
+    float: right;
+    margin: 18px 10px;
+}
+div.redes-sociais ul{
+    padding: 0px;
+    margin: 0px;
+    float: left;
+    list-style: none;
+    color:#FFF;
+    line-height: 24px;
+}
+div.redes-sociais ul li{
+    float: left;
+    margin: 0px 5px;
+}
+div.redes-sociais ul li.sep{
+    padding: 0px 5px;
+}
+div.redes-sociais ul li a{ color: #FFF;}
+div.redes-sociais ul li a:hover{ text-decoration:none;}
+
+
+#main{ padding:0px;}
+
+.row-offcanvas-left.active #main{    width: 100%;}
+.row-offcanvas-left.active #sidebar{    left: -10%;}
+.row-offcanvas-left #main{    width: 90%;}
+.row-offcanvas-left #sidebar{    width: 10%;}
+
+#menu{
+    position: fixed;
+    width: 10%;
+    padding: 10px 0px;
+    background: #E4E3E3;
+    height: 100%;
+    overflow: auto;
+}
+#menu p{
+    margin: 0px;
+    padding: 0px 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#menu ul{
+    float: left;
+    width: 100%;
+    position: relative !important;
+    
+    margin: 0px;
+    padding: 0px;
+}
+#menu ul li{
+    float: left;
+    width: 100%;
+    padding: 0px;
+}
+#menu ul li b{
+    width: 100%;
+    display: inline-block;
+    padding: 0px 10px;
+
+}
+#menu ul li a{
+    width: 100%;
+    display: inline-block;
+    padding: 0px 20px;
+	color: #777;
+}
+#menu ul li a:hover{ text-decoration:none; background:#D5D5D5;}
+#menu ul li ul{
+    border: none;
+    transform: translate3d(0px, 0px, 0px) !important;
+}
+#menu ul li ul li{}
+#menu ul li ul li a{
+    padding: 0px 30px;
+}
+
+
+#custom_content div.row div.col{padding: 5px;}
+
+.card-img-overlay{opacity:0;background-color:#000;color:#FFF;}
+.card-img-overlay:hover{ }
+
+
+#custom_content div.row div.col:hover > div{opacity:0.6;}
+
+
+#custom_content div.row div.col div.sharing{
+	position: absolute;
+	bottom: 10px;
+	left: 3%;
+	z-index: 1;
+	color: #FFF;
+	width: 94%;
+}
+
+
+#custom_content div.row div.col div.sharing, #custom_content div.row div.col div._info{opacity: 0;}
+	
+#custom_content div.row div.col:hover div.sharing, #custom_content div.row div.col:hover div._info{	opacity:1;}
+
+
+div._info{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    color: #FFF;
+    text-align: center;
+}
+
+div.info{
+    display: table;
+    height: 100%;
+    width: 80%;
+    margin: 0px 10%;
+}
+div.content_info{
+	width: 100%;
+    margin: 0px;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+div.content_info p{    margin: 20px 0px 0px 0px;    font-size: 1.3em; line-height:125%;}
+div.content_info ul.info{
+    display: table;
+    margin: 0px auto;
+}
+div.content_info ul.info li{
+    float: left;
+    margin: 0px 10px;
+}
+div.content_info button.btn_save{
+    padding: 3px 15px;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #FFF;
+}
+
+
+div.sharing ul.sharing{
+    float: left;
+}
+div.sharing ul li{
+    float: left;
+    margin: 10px 10px 0px 0px;
+}
+div.sharing ul li b{
+    float: left;
+}
+div.sharing ul li span{margin: 7px 0px 0px 4px;}
+
+div.sharing ul.author{
+    float: right;
+}
+div.sharing ul.author li{
+    float: left;
+    margin: 0px 10px 0px 0px;
+    line-height: 40px;
+}
+div.sharing ul.author li p{ margin:0px; line-height:41px;}
+
+
+#custom_content div.row div.col-4 ul.info li, #custom_content div.row div.col-6 ul.info li, #custom_content div.row div.col-8 ul.info li{
+    width: 100%;
+    margin: 5px 0px;
+}
+#custom_content div.row div.col-4 div.sharing, #custom_content div.row div.col-6 div.sharing, #custom_content div.row div.col-8 div.sharing{position:relative;bottom: inherit;left: initial;float: left;width: 100%;}
+
+#custom_content div.row div.col-4 div.sharing ul.author, #custom_content div.row div.col-6 div.sharing ul.author, #custom_content div.row div.col-8 div.sharing ul.author{ float:left; width:100%;}
+#custom_content div.row div.col-4 div.sharing ul.author li.avatar, #custom_content div.row div.col-6 div.sharing ul.author li.avatar, #custom_content div.row div.col-8 div.sharing ul.author li.avatar{ display:none;}
+#custom_content div.row div.col-4 div.sharing ul.author li, #custom_content div.row div.col-6 div.sharing ul.author li, #custom_content div.row div.col-8 div.sharing ul.author li{ margin:0px; width:100%;text-align:center;}
+
+
+@media screen and (max-width: 1366px) {
+    .row-offcanvas-left #sidebar, #menu {    		width: 15%;}
+	.row-offcanvas-left.active #sidebar{ left:-15%;}	
+    .row-offcanvas-left #main {    width: 85%;}
+	
+	
+	div.content_info{ font-size: 12px;}
+	div.sharing ul li span{margin: 4px 0px 0px 4px;}
+	
+	
+	
+}
+
+@media screen and (max-width: 768px) {
+    .row-offcanvas-left #sidebar, #menu {    		width: 20%;}
+	.row-offcanvas-left.active #sidebar{ left:-20%;}	
+    .row-offcanvas-left #main {    width: 80%;}
+	
+	
+    #main {        width: 1%;        left: 0;    }
+    
+    #sidebar .visible-xs {       display:inline !important;    }
+    
+    .row-offcanvas {       position: relative;       -webkit-transition: all 0.4s ease-in-out;       -moz-transition: all 0.4s ease-in-out;       transition: all 0.4s ease-in-out;}
+    
+    .row-offcanvas-left.active {    }
+    
+    .row-offcanvas-left.active .sidebar-offcanvas {
+       left: -45%;
+       position: absolute;
+       top: 0;
+       width: 45%;
+    }
+} 
+ 
+ 
+@media screen and (min-width: 768px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+
+  .row-offcanvas-left.active {
+    left: 0%;
+  }
+
+  .row-offcanvas-left.active .sidebar-offcanvas {
+    left: -3%;
+    position: absolute;
+    top: 0;
+    width: 3%;
+    text-align: center;
+    min-width:42px;
+  }
+  
+  #main {
+    left: 0;
+  }
+}
+
+
+@media (max-width: 667px) {
+
+.navbar-brand-centered{
+    left: initial;
+    right: 10px;
+}
+div.redes-sociais{ display:none;}
+.row-offcanvas-left #sidebar, #menu, .row-offcanvas-left #main {    		width: 50%;}
+.row-offcanvas-left.active #sidebar{ left:-50%;}
+
+div.content_info p{ margin:10px 0px 0px 0px;}
+div.sharing ul li{ margin:5px 0px 0px 0px;}
+
+
+}
+
+@media (max-width: 575px) {
+	#custom_content div.row div.col{ text-align:center;}
+}
+@media (max-width: 480px) {
+	#custom_content div.row div.col div.sharing{ display:none;}
+}
+
+@media (max-width: 320px) {
+.navbar-brand-centered {
+left: initial;
+right: 10px;
+margin: 0px;
+}
+	
+}
